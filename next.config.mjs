@@ -8,13 +8,12 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // Required for GitHub Pages
-  output: 'export', // enables next export (static HTML)
+  // Required for GitHub Pages root deployment
+  output: 'export',   // enables next export (static HTML)
 
-  // Replace <repo-name> with your actual GitHub repo
-  basePath: '/portfolio-web',
-  assetPrefix: '/portfolio-web/',
-
+  // Remove basePath and assetPrefix for root deployment
+  basePath: '',
+  assetPrefix: '',
 };
 
 export default nextConfig;

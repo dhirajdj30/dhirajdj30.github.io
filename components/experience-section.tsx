@@ -13,7 +13,7 @@ const experiences = [
   },
   {
     title: "DevOps Engineering Intern",
-    company: "Tech Startup",
+    company: "Qualys",
     period: "Feb'25 — Jul'25",
     description:
       "Worked on end-to-end ML solutions for natural language processing applications. Developed and deployed models for text classification and entity extraction.",

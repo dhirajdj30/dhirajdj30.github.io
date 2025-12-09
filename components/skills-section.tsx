@@ -11,21 +11,23 @@ import {
   GitMerge,
   Database,
   Server,
+  Workflow,
+  Layers,
+  BookOpen,
+  LineChart,
 } from "lucide-react"
 
 const skills = [
   { name: "Python", icon: Code2 },
+  { name: "FastAPI", icon: Zap },
+  { name: "LangChain", icon: BookOpen },
+  { name: "PostgreSQL", icon: Database },
+  { name: "Hugging Face", icon: Brain },
   { name: "Docker", icon: Container },
   { name: "Kubernetes", icon: Network },
-  { name: "GitHub Actions", icon: GitBranch },
-  { name: "FastAPI", icon: Zap },
-  { name: "TensorFlow", icon: Brain },
-  { name: "PyTorch", icon: Cpu },
-  { name: "AWS", icon: Cloud },
+  { name: "MLflow", icon: Workflow },
   { name: "Linux", icon: Terminal },
   { name: "Git", icon: GitMerge },
-  { name: "PostgreSQL", icon: Database },
-  { name: "Redis", icon: Server },
 ]
 
 export function SkillsSection() {
@@ -39,7 +41,7 @@ export function SkillsSection() {
 
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-16">Tech stack & tools</h2>
 
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {skills.map((skill) => (
             <div
               key={skill.name}
@@ -56,16 +58,12 @@ export function SkillsSection() {
         {/* Additional Skills */}
         <div className="mt-12 flex flex-wrap gap-3">
           {[
-            "MLOps",
-            "LLMs",
+            "LLMOps",
             "Agentic AI",
-            "CI/CD",
-            "Microservices",
-            "REST APIs",
-            "gRPC",
-            "Monitoring",
-            "Prometheus",
-            "Grafana",
+            "Vector Databases",
+            "Cloud-Native ML",
+            "Orchestration Pipelines",
+            "Infrastructure Automation",
           ].map((skill) => (
             <span
               key={skill}

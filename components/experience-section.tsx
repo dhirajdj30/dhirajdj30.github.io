@@ -2,7 +2,7 @@ const experiences = [
   {
     title: "Associate MLOps Engineer",
     company: "Qualys",
-    period: "2023 — Present",
+    period: "Aug'25 — Present",
     description:
       "Leading the development of ML infrastructure and deployment pipelines. Building scalable systems for model training, serving, and monitoring across the organization.",
     highlights: [
@@ -12,9 +12,9 @@ const experiences = [
     ],
   },
   {
-    title: "ML Engineering Intern",
+    title: "DevOps Engineering Intern",
     company: "Tech Startup",
-    period: "2022 — 2023",
+    period: "Feb'25 — Jul'25",
     description:
       "Worked on end-to-end ML solutions for natural language processing applications. Developed and deployed models for text classification and entity extraction.",
     highlights: [
@@ -24,9 +24,9 @@ const experiences = [
     ],
   },
   {
-    title: "Software Developer Intern",
-    company: "Enterprise Corp",
-    period: "2021 — 2022",
+    title: "AI Software Developer Intern",
+    company: "Eduplus Campus",
+    period: "Jun'24 — Jan'25",
     description:
       "Built backend services and APIs for data-intensive applications. Gained experience in distributed systems and cloud infrastructure.",
     highlights: [

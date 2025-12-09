@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Send, Mail, MapPin, ArrowUpRight } from "lucide-react"
+import { Send, Mail, MapPin, ArrowUpRight, LinkedinIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -41,16 +41,24 @@ export function ContactSection() {
 
             <div className="space-y-4">
               <a
+                href="https://www.linkedin.com/in/dhiraj-jagtap-297a7322b/"
+                className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <LinkedinIcon className="h-5 w-5" />
+                <span>Dhiraj Jagtap</span>
+                <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+              <a
                 href="mailto:dj@example.com"
                 className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
               >
                 <Mail className="h-5 w-5" />
-                <span>dj@example.com</span>
+                <span>dhirajdj30@gmail.com</span>
                 <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="h-5 w-5" />
-                <span>India</span>
+                <span>Pune, India</span>
               </div>
             </div>
           </div>

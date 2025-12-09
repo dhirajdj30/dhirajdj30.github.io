@@ -3,56 +3,87 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "ML Pipeline Orchestrator",
+    title: "ORBIT — Operational Risk Based Intelligent Telemetry",
     problem:
-      "Data science teams struggled with inconsistent model training environments and manual deployment processes, leading to delayed releases and production issues.",
+      "Traditional observability platforms generate overwhelming alert noise, require manual investigation, and lack intelligent signal correlation, leading to slow incident resolution and high operational overhead.",
     solution:
-      "Built an end-to-end ML pipeline orchestrator using Kubeflow and Airflow that automated data preprocessing, model training, evaluation, and deployment with built-in versioning and rollback capabilities.",
-    tech: ["Python", "Kubeflow", "Airflow", "Docker", "Kubernetes"],
-    github: "#",
-    demo: "#",
+      "Designed an AI-driven observability framework powered by autonomous multi-agent systems that analyze telemetry signals, surface correlations, generate natural-language diagnostics, and progressively enable proactive and self-healing operations.",
+    tech: [
+      "Agentic AI",
+      "LLMs",
+      "FastAPI",
+      "Python",
+      "Prometheus",
+      "Grafana",
+      "Vector DB",
+      "Kubernetes"
+    ],
   },
   {
-    title: "LLM Agent Framework",
+    title: "AI for Metabase — Natural-Language Dashboard Generator",
     problem:
-      "Customer support teams were overwhelmed with repetitive queries, leading to slow response times and frustrated customers.",
+      "Business teams rely heavily on engineers and analysts to create dashboards, resulting in delays and friction between insights and execution.",
     solution:
-      "Developed an agentic AI framework that orchestrates multiple LLM agents to handle complex, multi-step customer inquiries autonomously, reducing response time by 80%.",
-    tech: ["Python", "LangChain", "FastAPI", "Redis", "PostgreSQL"],
-    github: "#",
-    demo: "#",
+      "Built an AI-powered workflow that converts natural-language instructions into SQL, generates Metabase cards, and assembles entire dashboards automatically. The system interprets user intent, infers schema context, and handles end-to-end generation from query to dashboard.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "LLMs",
+      "LangChain",
+      "Metabase API",
+      "PostgreSQL"
+    ],
   },
   {
-    title: "Real-time Model Monitoring",
+    title: "MLflow Platform & Automated Model Migration",
     problem:
-      "ML models in production suffered from silent failures and data drift that went undetected for weeks, causing business impact.",
+      "Model development lacked versioning, governance, and a consistent path from experimentation to production, resulting in delays and unclear model lineage.",
     solution:
-      "Created a comprehensive monitoring dashboard that tracks model performance, data drift, and system health in real-time with automated alerting and retraining triggers.",
-    tech: ["Python", "Prometheus", "Grafana", "FastAPI", "InfluxDB"],
-    github: "#",
-    demo: "#",
+      "Implemented an enterprise-grade MLflow platform for experiment tracking, model registry, and lineage. Designed a Jenkins-powered automated migration pipeline that promotes models from development to production based on evaluation metrics and governance checks.",
+    tech: [
+      "MLflow",
+      "Python",
+      "Jenkins",
+      "Docker",
+      "Model Registry",
+      "Kubernetes"
+    ],
   },
   {
-    title: "Feature Store Platform",
+    title: "Unified Stock Intelligence",
     problem:
-      "Feature engineering was duplicated across teams, leading to inconsistent features and wasted compute resources.",
+      "Retail investors lack a unified, intelligent system that merges technical, fundamental, and news-driven insights for stock decision-making.",
     solution:
-      "Implemented a centralized feature store that provides a single source of truth for ML features, enabling feature reuse, versioning, and consistent serving across training and inference.",
-    tech: ["Python", "Feast", "Redis", "PostgreSQL", "Kubernetes"],
-    github: "#",
-    demo: "#",
+      "Created a multi-agent system that analyzes market fundamentals, technical indicators, and real-time news sentiment, then synthesizes insights into predictive signals for better decision-making.",
+    tech: [
+      "Agentic AI",
+      "Python",
+      "LLMs",
+      "FastAPI",
+      "Vector Search",
+      "Plotting Libraries"
+    ],
+    github: "https://github.com/dhirajdj30/Unified-Stock-Intelligence",
   },
   {
-    title: "GitOps ML Deployment",
+    title: "APIgentMan — Autonomous API Testing CLI",
     problem:
-      "Manual model deployments were error-prone and lacked proper audit trails, making it difficult to track changes and troubleshoot issues.",
+      "Existing API testing tools are heavy, manual, and lack intelligent insight generation for debugging or anomaly detection.",
     solution:
-      "Established a GitOps workflow for ML deployments using ArgoCD and GitHub Actions, enabling declarative, version-controlled deployments with automatic rollbacks.",
-    tech: ["GitHub Actions", "ArgoCD", "Helm", "Kubernetes", "Docker"],
-    github: "#",
-    demo: "#",
+      "Developed a lightweight CLI-based agentic tool that executes API test collections, performs assertions, monitors performance, detects anomalies, and even generates new tests using an LLM. Designed for developers who prefer terminal-first workflows.",
+    tech: [
+      "Python",
+      "Agentic AI",
+      "CLI",
+      "YAML",
+      "LLMs",
+      "FastAPI"
+    ],
+    github: "https://github.com/dhirajdj30/APIgentMan",
+    demo: "https://github.com/dhirajdj30/APIgentMan",
   },
 ]
+
 
 export function ProjectsSection() {
   return (
@@ -77,26 +108,31 @@ export function ProjectsSection() {
                   <h3 className="text-2xl font-bold text-foreground mt-1">{project.title}</h3>
                 </div>
                 <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="border-border text-muted-foreground hover:text-foreground hover:border-foreground bg-transparent"
-                    asChild
-                  >
-                    <a href={project.github}>
-                      <Github className="h-4 w-4" />
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="border-border text-muted-foreground hover:text-foreground hover:border-foreground bg-transparent"
-                    asChild
-                  >
-                    <a href={project.demo}>
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  </Button>
+                  {project.github && (
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="border-border text-muted-foreground hover:text-foreground hover:border-foreground bg-transparent"
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  )}
+
+                  {project.demo && (
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="border-border text-muted-foreground hover:text-foreground hover:border-foreground bg-transparent"
+                      asChild
+                    >
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
 

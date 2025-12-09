@@ -147,7 +147,7 @@ export function HeroSection() {
             className="h-12 w-12 border-2 border-foreground/20 dark:border-foreground/40 text-foreground/70 dark:text-foreground/90 hover:text-foreground hover:border-foreground hover:bg-foreground/5 dark:hover:bg-foreground/10 bg-background/50 backdrop-blur-sm transition-all duration-300"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/dhirajdj30" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
             </a>
           </Button>
@@ -157,7 +157,7 @@ export function HeroSection() {
             className="h-12 w-12 border-2 border-foreground/20 dark:border-foreground/40 text-foreground/70 dark:text-foreground/90 hover:text-foreground hover:border-foreground hover:bg-foreground/5 dark:hover:bg-foreground/10 bg-background/50 backdrop-blur-sm transition-all duration-300"
             asChild
           >
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dhiraj-jagtap-297a7322b" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
             </a>
           </Button>
@@ -167,7 +167,7 @@ export function HeroSection() {
             className="h-12 w-12 border-2 border-foreground/20 dark:border-foreground/40 text-foreground/70 dark:text-foreground/90 hover:text-foreground hover:border-foreground hover:bg-foreground/5 dark:hover:bg-foreground/10 bg-background/50 backdrop-blur-sm transition-all duration-300"
             asChild
           >
-            <a href="mailto:dj@example.com">
+            <a href="mailto:dhirajdj30@gmail.com">
               <Mail className="h-5 w-5" />
             </a>
           </Button>
